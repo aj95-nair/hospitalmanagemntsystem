@@ -1,0 +1,434 @@
+{
+	"info": {
+		"_postman_id": "68c9ed3b-b27d-454a-b405-d72f119f682d",
+		"name": "hospital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:5000/api/users/login-clerk",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIwZTcxMmRhMmY4NzUxNGE4YzY4NGIzIiwicm9sZSI6InBhdGllbnQiLCJ1c2VybmFtZSI6ImRocnV2MTk5OCIsImVtYWlsIjoiZGhydXYxOTk4QG91dGxvb2suY29tIiwiaWF0IjoxNjQ1MjM4NDIyLCJleHAiOjE2NDU0MTEyMjJ9.5X7IjdHjG5fn122mSNTmQx-2JCqRnls1x0wIoyn0He4",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"dhruv1998\",\r\n    \"password\": \"1234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/api/users/login-clerk",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"login-clerk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:5000/api/users/register-patient",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIwZTcxMmRhMmY4NzUxNGE4YzY4NGIzIiwicm9sZSI6ImNsZXJrIiwidXNlcm5hbWUiOiJkaHJ1djE5OTgiLCJlbWFpbCI6ImRocnV2MTk5OEBvdXRsb29rLmNvbSIsImlhdCI6MTY0NTI2MTM1NSwiZXhwIjoxNjQ1NDM0MTU1fQ._kv3_MHHw-QiZtZbcBto9sB-h7Gi6c4FhmcuTQZt5WI",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sakura Miko\",\r\n    \"email\": \"sakuramiko12@hololive.tv\",\r\n    \"phno\": \"9874521452\",\r\n    \"username\": \"sakura123\",\r\n    \"password\": \"1234567890\",\r\n    \"firstname\": \"sakura\",\r\n    \"lastname\": \"miko\",\r\n    \"dateofbirth\": \"27101998\",\r\n    \"age\": \"29\",\r\n    \"address\": \"Japan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/api/users/register-patient",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"register-patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:5000/api/users/login-doctor",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIwZTcxMmRhMmY4NzUxNGE4YzY4NGIzIiwicm9sZSI6InBhdGllbnQiLCJ1c2VybmFtZSI6ImRocnV2MTk5OCIsImVtYWlsIjoiZGhydXYxOTk4QG91dGxvb2suY29tIiwiaWF0IjoxNjQ1MjM4NDIyLCJleHAiOjE2NDU0MTEyMjJ9.5X7IjdHjG5fn122mSNTmQx-2JCqRnls1x0wIoyn0He4",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"usapeko3\",\r\n    \"password\": \"1234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/api/users/login-doctor",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"login-doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:5000/api/users/doctor-update-patient",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIxMjM2N2JiMjA5NDNiZjM4NzIyYzYyIiwicm9sZSI6ImRvY3RvciIsInVzZXJuYW1lIjoidXNhcGVrbzMiLCJlbWFpbCI6InVzYXBla29AaG9sb2xpdmUudHYiLCJpYXQiOjE2NDUzNjE3ODksImV4cCI6MTY0NTUzNDU4OX0.-_gz0act9jN5gItxK3cFdNJUu4YXkod0RSPbfxkGIqY",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"sakura123\",\r\n    \"prescription\": \"Panadol 450, dolo360\",\r\n    \"prescriptiondate\": \"20-02-2022\",\r\n    \"state\" : \"Critical\",\r\n    \"doctorname\": \"Usada Pekora\",\r\n    \"nextvisit\": \"No visit\",\r\n    \"disease\": \"Covid-19\",\r\n    \"wardname\": \"ICU\",\r\n    \"roomnumber\": \"I-7\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/api/users/doctor-update-patient",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"doctor-update-patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:5000/api/users/login-patient",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIwZTcxMmRhMmY4NzUxNGE4YzY4NGIzIiwicm9sZSI6InBhdGllbnQiLCJ1c2VybmFtZSI6ImRnV2MTk5OCIsImVtYWlsIjoiZGhydXYxOTk4QG91dGxvb2suY29tIiwiaWF0IjoxNjQ1MjI5MTMyLCJleHAiOjE2NDU0MDE5MzJ9.evbryobqR67lIne7UGOwnFab2HYMXfnbH1OUx_q6SFM",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"sakura123\",\r\n    \"password\": \"1234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/api/users/login-patient",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"login-patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:5000/api/users/patient-details",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIxMjM3MmZhNDNjOWEwNzc0MzljMWE4Iiwicm9sZSI6InBhdGllbnQiLCJ1c2VybmFtZSI6InNha3VyYTEyMyIsImVtYWlsIjoic2FrdXJhbWlrbzEyQGhvbG9saXZlLnR2IiwiaWF0IjoxNjQ1MzYyNDk3LCJleHAiOjE2NDU1MzUyOTd9.a6yqVGoCAbxnoRKcybfcalePRXyKKdShh3_ynH71Cd8",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/api/users/patient-details",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"patient-details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:5000/api/users/sakura123",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIxMjM2N2JiMjA5NDNiZjM4NzIyYzYyIiwicm9sZSI6ImRvY3RvciIsInVzZXJuYW1lIjoidXNhcGVrbzMiLCJlbWFpbCI6InVzYXBla29AaG9sb2xpdmUudHYiLCJpYXQiOjE2NDUzNjE3ODksImV4cCI6MTY0NTUzNDU4OX0.-_gz0act9jN5gItxK3cFdNJUu4YXkod0RSPbfxkGIqY",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/api/users/sakura123",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"sakura123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:5000/api/users/all-patients-doctor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIxMjM2N2JiMjA5NDNiZjM4NzIyYzYyIiwicm9sZSI6ImRvY3RvciIsInVzZXJuYW1lIjoidXNhcGVrbzMiLCJlbWFpbCI6InVzYXBla29AaG9sb2xpdmUudHYiLCJpYXQiOjE2NDUzNjE3ODksImV4cCI6MTY0NTUzNDU4OX0.-_gz0act9jN5gItxK3cFdNJUu4YXkod0RSPbfxkGIqY",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/api/users/all-patients-doctor",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"all-patients-doctor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:5000/api/users/all-patients-clerk",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIxMjM2N2JiMjA5NDNiZjM4NzIyYzYyIiwicm9sZSI6ImRvY3RvciIsInVzZXJuYW1lIjoidXNhcGVrbzMiLCJlbWFpbCI6InVzYXBla29AaG9sb2xpdmUudHYiLCJpYXQiOjE2NDUzNjE3ODksImV4cCI6MTY0NTUzNDU4OX0.-_gz0act9jN5gItxK3cFdNJUu4YXkod0RSPbfxkGIqY",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/api/users/all-patients-clerk",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"all-patients-clerk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:5000/api/users/clerk-update-patient",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIxMjM2N2JiMjA5NDNiZjM4NzIyYzYyIiwicm9sZSI6ImRvY3RvciIsInVzZXJuYW1lIjoidXNhcGVrbzMiLCJlbWFpbCI6InVzYXBla29AaG9sb2xpdmUudHYiLCJpYXQiOjE2NDUzNjE3ODksImV4cCI6MTY0NTUzNDU4OX0.-_gz0act9jN5gItxK3cFdNJUu4YXkod0RSPbfxkGIqY",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"condition\": \"Discharged\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/api/users/clerk-update-patient",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"users",
+						"clerk-update-patient"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

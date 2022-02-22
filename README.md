@@ -1,3 +1,3 @@
 # hospitalmanagemntsystem
 
-Inside the node-rb-ac folder you will find APIs
+Inside the node-rb-auth folder you will find APIs

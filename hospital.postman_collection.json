@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "127.0.0.1:5000/api/users/login-clerk",
+			"name": "Clerk Login",
 			"request": {
 				"auth": {
 					"type": "noauth"
@@ -48,7 +48,7 @@
 			"response": []
 		},
 		{
-			"name": "127.0.0.1:5000/api/users/register-patient",
+			"name": "Register Patient",
 			"request": {
 				"auth": {
 					"type": "noauth"
@@ -89,7 +89,7 @@
 			"response": []
 		},
 		{
-			"name": "127.0.0.1:5000/api/users/login-doctor",
+			"name": "Doctor Login",
 			"request": {
 				"auth": {
 					"type": "noauth"
@@ -131,7 +131,7 @@
 			"response": []
 		},
 		{
-			"name": "127.0.0.1:5000/api/users/doctor-update-patient",
+			"name": "Doctor Treatment",
 			"request": {
 				"auth": {
 					"type": "noauth"
@@ -172,7 +172,7 @@
 			"response": []
 		},
 		{
-			"name": "127.0.0.1:5000/api/users/login-patient",
+			"name": "Patient Login",
 			"request": {
 				"auth": {
 					"type": "noauth"
@@ -214,7 +214,7 @@
 			"response": []
 		},
 		{
-			"name": "127.0.0.1:5000/api/users/patient-details",
+			"name": "Patient Fetching thier details",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -258,7 +258,7 @@
 			"response": []
 		},
 		{
-			"name": "127.0.0.1:5000/api/users/sakura123",
+			"name": "Doctor or Clerk Fetching Patient details",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -302,7 +302,7 @@
 			"response": []
 		},
 		{
-			"name": "127.0.0.1:5000/api/users/all-patients-doctor",
+			"name": "Doctor fetching all patients details",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -346,7 +346,7 @@
 			"response": []
 		},
 		{
-			"name": "127.0.0.1:5000/api/users/all-patients-clerk",
+			"name": "Clerk fetching all patient details",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -390,7 +390,7 @@
 			"response": []
 		},
 		{
-			"name": "127.0.0.1:5000/api/users/clerk-update-patient",
+			"name": "Clerk updating Patient details",
 			"request": {
 				"auth": {
 					"type": "noauth"

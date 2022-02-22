@@ -2,21 +2,13 @@ const router = require("express").Router();
 const Patient = require("../models/Patient");
 const treatment = require("../models/Treatment");
 
-const { patientregister, patientLogin, clerkLogin, doctorLogin, userAuth, checkRole } = require('../utils/Authorization');
+const { patientregister, login, userAuth, checkRole } = require('../utils/Authorization');
 
-/********Login routes********/
-router.post("/login-patient", async (req, res) => {
-  await patientLogin(req.body, "patient", res);
+/********Login route********/
+router.post("/login", async (req, res) => {
+  await login(req.body, res);
 });
-
-router.post("/login-clerk", async (req, res) => {
-  await clerkLogin(req.body, "clerk", res);
-});
-
-router.post("/login-doctor", async (req, res) => {
-  await doctorLogin(req.body, "doctor", res);
-});
-/********Login routes********/
+/********Login route********/
 
 
 /**********Auth routers************/
